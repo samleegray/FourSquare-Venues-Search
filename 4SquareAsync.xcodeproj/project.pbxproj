@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE4DC16E15BAAAFE005B1401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC16D15BAAAFE005B1401 /* main.m */; };
+		CE4DC17A15BAAD54005B1401 /* FourSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC17915BAAB2C005B1401 /* FourSquare.m */; };
+		CE4DC17D15BAAD7A005B1401 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC17C15BAAD7A005B1401 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4DC1C315BAC21C005B1401 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE4DC1C115BAC21C005B1401 /* InfoPlist.strings */; };
+		CE4DC1CB15BAC2B7005B1401 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC17C15BAAD7A005B1401 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CE4DC1CC15BAC2C7005B1401 /* FourSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4DC17915BAAB2C005B1401 /* FourSquare.m */; };
+		CE4DC1CF15BAC322005B1401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DC1BD15BAC21C005B1401 /* Foundation.framework */; };
+		CE4DC1D115BAC506005B1401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4DC1BD15BAC21C005B1401 /* Foundation.framework */; };
+		CE4DC1D215BAC513005B1401 /* FourSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DC17815BAAB2C005B1401 /* FourSquare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4DC1F215BAC6AC005B1401 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4DC17B15BAAD7A005B1401 /* JSONKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE4DC16415BAAAFE005B1401 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE4DC16615BAAAFE005B1401 /* 4SquareAsync */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 4SquareAsync; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4DC16D15BAAAFE005B1401 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE4DC17015BAAAFE005B1401 /* 4SquareAsync-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "4SquareAsync-Prefix.pch"; sourceTree = "<group>"; };
+		CE4DC17815BAAB2C005B1401 /* FourSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourSquare.h; sourceTree = "<group>"; };
+		CE4DC17915BAAB2C005B1401 /* FourSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourSquare.m; sourceTree = "<group>"; };
+		CE4DC17B15BAAD7A005B1401 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CE4DC17C15BAAD7A005B1401 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CE4DC1B815BAC21C005B1401 /* FourSquare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FourSquare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4DC1BD15BAC21C005B1401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE4DC1C015BAC21C005B1401 /* FourSquare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FourSquare-Info.plist"; sourceTree = "<group>"; };
+		CE4DC1C215BAC21C005B1401 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4DC16315BAAAFE005B1401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DC1CF15BAC322005B1401 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4DC1B415BAC21C005B1401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DC1D115BAC506005B1401 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE4DC15B15BAAAFD005B1401 = {
+			isa = PBXGroup;
+			children = (
+				CE4DC16C15BAAAFE005B1401 /* 4SquareAsync */,
+				CE4DC1BE15BAC21C005B1401 /* FourSquare */,
+				CE4DC16915BAAAFE005B1401 /* Frameworks */,
+				CE4DC16715BAAAFE005B1401 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE4DC16715BAAAFE005B1401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC16615BAAAFE005B1401 /* 4SquareAsync */,
+				CE4DC1B815BAC21C005B1401 /* FourSquare.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE4DC16915BAAAFE005B1401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC1BD15BAC21C005B1401 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE4DC16C15BAAAFE005B1401 /* 4SquareAsync */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC16D15BAAAFE005B1401 /* main.m */,
+				CE4DC17815BAAB2C005B1401 /* FourSquare.h */,
+				CE4DC17915BAAB2C005B1401 /* FourSquare.m */,
+				CE4DC16F15BAAAFE005B1401 /* Supporting Files */,
+			);
+			path = 4SquareAsync;
+			sourceTree = "<group>";
+		};
+		CE4DC16F15BAAAFE005B1401 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC17E15BAAD8B005B1401 /* JSONKit */,
+				CE4DC17015BAAAFE005B1401 /* 4SquareAsync-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE4DC17E15BAAD8B005B1401 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC17B15BAAD7A005B1401 /* JSONKit.h */,
+				CE4DC17C15BAAD7A005B1401 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		CE4DC1BE15BAC21C005B1401 /* FourSquare */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC1BF15BAC21C005B1401 /* Supporting Files */,
+			);
+			path = FourSquare;
+			sourceTree = "<group>";
+		};
+		CE4DC1BF15BAC21C005B1401 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE4DC1C015BAC21C005B1401 /* FourSquare-Info.plist */,
+				CE4DC1C115BAC21C005B1401 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE4DC1B515BAC21C005B1401 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DC1D215BAC513005B1401 /* FourSquare.h in Headers */,
+				CE4DC1F215BAC6AC005B1401 /* JSONKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE4DC16515BAAAFE005B1401 /* 4SquareAsync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4DC17515BAAAFE005B1401 /* Build configuration list for PBXNativeTarget "4SquareAsync" */;
+			buildPhases = (
+				CE4DC16215BAAAFE005B1401 /* Sources */,
+				CE4DC16315BAAAFE005B1401 /* Frameworks */,
+				CE4DC16415BAAAFE005B1401 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 4SquareAsync;
+			productName = 4SquareAsync;
+			productReference = CE4DC16615BAAAFE005B1401 /* 4SquareAsync */;
+			productType = "com.apple.product-type.tool";
+		};
+		CE4DC1B715BAC21C005B1401 /* FourSquare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4DC1C815BAC21C005B1401 /* Build configuration list for PBXNativeTarget "FourSquare" */;
+			buildPhases = (
+				CE4DC1B315BAC21C005B1401 /* Sources */,
+				CE4DC1B415BAC21C005B1401 /* Frameworks */,
+				CE4DC1B515BAC21C005B1401 /* Headers */,
+				CE4DC1B615BAC21C005B1401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourSquare;
+			productName = FourSquare;
+			productReference = CE4DC1B815BAC21C005B1401 /* FourSquare.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4DC15D15BAAAFD005B1401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CE4DC16015BAAAFD005B1401 /* Build configuration list for PBXProject "4SquareAsync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE4DC15B15BAAAFD005B1401;
+			productRefGroup = CE4DC16715BAAAFE005B1401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE4DC16515BAAAFE005B1401 /* 4SquareAsync */,
+				CE4DC1B715BAC21C005B1401 /* FourSquare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE4DC1B615BAC21C005B1401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DC1C315BAC21C005B1401 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4DC16215BAAAFE005B1401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DC16E15BAAAFE005B1401 /* main.m in Sources */,
+				CE4DC17A15BAAD54005B1401 /* FourSquare.m in Sources */,
+				CE4DC17D15BAAD7A005B1401 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE4DC1B315BAC21C005B1401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4DC1CB15BAC2B7005B1401 /* JSONKit.m in Sources */,
+				CE4DC1CC15BAC2C7005B1401 /* FourSquare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE4DC1C115BAC21C005B1401 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4DC1C215BAC21C005B1401 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4DC17315BAAAFE005B1401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE4DC17415BAAAFE005B1401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE4DC17615BAAAFE005B1401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4SquareAsync/4SquareAsync-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE4DC17715BAAAFE005B1401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4SquareAsync/4SquareAsync-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE4DC1C915BAC21C005B1401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4SquareAsync/4SquareAsync-Prefix.pch";
+				INFOPLIST_FILE = "FourSquare/FourSquare-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		CE4DC1CA15BAC21C005B1401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "4SquareAsync/4SquareAsync-Prefix.pch";
+				INFOPLIST_FILE = "FourSquare/FourSquare-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4DC16015BAAAFD005B1401 /* Build configuration list for PBXProject "4SquareAsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4DC17315BAAAFE005B1401 /* Debug */,
+				CE4DC17415BAAAFE005B1401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4DC17515BAAAFE005B1401 /* Build configuration list for PBXNativeTarget "4SquareAsync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4DC17615BAAAFE005B1401 /* Debug */,
+				CE4DC17715BAAAFE005B1401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE4DC1C815BAC21C005B1401 /* Build configuration list for PBXNativeTarget "FourSquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4DC1C915BAC21C005B1401 /* Debug */,
+				CE4DC1CA15BAC21C005B1401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE4DC15D15BAAAFD005B1401 /* Project object */;
+}

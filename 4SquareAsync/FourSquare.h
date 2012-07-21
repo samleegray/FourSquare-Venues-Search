@@ -15,11 +15,11 @@ typedef void (^VenuesBlock)(NSArray *); //block typedef for the completion handl
 @protocol FourSquareDelegate <NSObject>
 
 @required
--(void)returnedVenues:(NSArray *)venuesDictionary;
+-(void)returnedVenues:(NSArray *)venuesArray;
 
 @end
 
-@interface FourSquare : NSObject <NSURLConnectionDelegate>
+@interface FourSquare : NSObject <NSURLConnectionDelegate, FourSquareDelegate>
 @property(readwrite)id<FourSquareDelegate> delegate; //the delegate needs to be set by others, hence readwrite
 @property(readonly)NSArray *cachedVenuesArray; //cached array shouldn't be able to be written to by others, so it's readonly
 

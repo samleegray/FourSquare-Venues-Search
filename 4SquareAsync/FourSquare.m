@@ -113,4 +113,8 @@ static FourSquare *sharedSquare = nil;
     [_dataString appendString:json];
 }
 
+-(void)returnedVenues:(NSArray *)venuesArray {
+    NSLog(@"venuesArray: %@", venuesArray);
+}
+
 @end

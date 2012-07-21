@@ -1,0 +1,39 @@
+This software is licensed under the MIT license. If you want to know the details about what freedom that gives you, read the file titled LICENSE.(basically, this is the most free license I could find, do with the code as you wish, but always leave the LICENSE file alone, as well as my name & copyrights at the top of the source files so I can be credited as the author) Onto the good stuff!
+
+**Notes**
+
+This framework allows you to get an `NSArray` full of `NSDictionaries` listing venues around you. You can do this Asynchronously, or Synchronously via two different method calls. Using the Synchronous method will require you to use the `FourSquareDelegate`, because it returns values via a delegate method call.
+
+The Asynchronous method below will pass a NSArray full of venues to the completion block you specify. Do whatever you want with it from that block. I'd recommend doing it this way. It returns instantly after you call it, and won't hold you up.
+
+	 -(void)searchVenuesASync:(NSNumber *)latitude longitude:(NSNumber *)longitude completion:(VenuesBlock)completionBlock;
+	
+OR You can go the Synchronous route and use the method below.
+
+	 -(void)searchVenuesSync:(NSNumber *)latitude longitude:(NSNumber *)longitude;
+
+If you choose to use the Synchronous method however, you'll need to abide by the `FourSquareDelegate` and it requires you implement the method below in whatever class you choose to make the delegate:
+
+	 -(void)returnedVenues:(NSArray *)venuesDictionary;
+	
+Now that you got the basic theory, here is the example code.
+
+**Asynchronous Example Code**
+
+	 [[FourSquare sharedSquare] searchVenuesASync:[NSNumber numberWithFloat:32.766491] longitude:[NSNumber numberWithFloat:-96.690674] completion:^(NSArray *venuesArray) {
+	            NSLog(@"venues: %@\n", venuesArray);
+	        }];
+	
+This will print out the whole venues array passed to the block.
+
+**Synchronous Example Code**
+
+	 [[FourSquare sharedSquare] searchVenuesSync:[NSNumber numberWithFloat:32.766491] longitude:[NSNumber numberWithFloat:-96.690674]];
+	
+And then you need to make sure you implement the `FourSquareDelegate` method:
+
+	 -(void)returnedVenues:(NSArray *)venuesArray {
+	    NSLog(@"venuesArray: %@", venuesArray);
+	}
+	
+That will print the venuesArray returned to the delegate method.

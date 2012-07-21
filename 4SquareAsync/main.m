@@ -13,6 +13,8 @@ int main(int argc, const char * argv[])
 {
     @autoreleasepool {
         
+        [[FourSquare sharedSquare] searchVenuesSync:[NSNumber numberWithFloat:32.766491] longitude:[NSNumber numberWithFloat:-96.690674]];
+        
         [[FourSquare sharedSquare] searchVenuesASync:[NSNumber numberWithFloat:32.766491] longitude:[NSNumber numberWithFloat:-96.690674] completion:^(NSArray *venuesArray) {
             NSLog(@"venues: %@\n", venuesArray);
         }];
